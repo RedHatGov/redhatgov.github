@@ -23,10 +23,11 @@
     <!-- iPhone non-retina icon (iOS < 7) -->
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../latest/_images/apple-touch-icon-precomposed-57.png">
     <!-- Patternfly CSS -->
-    <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
-    <link href="../../latest/_stylesheets/patternfly.min.css" rel="stylesheet" />
-    <link href="../../latest/_stylesheets/patternfly-additions.min.css" rel="stylesheet" />
-    <link href="../../latest/_stylesheets/docs.css" rel="stylesheet" />
+      <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+  <link href="../../latest/_stylesheets/docs.css" rel="stylesheet" />
+  <link href="../../latest/_stylesheets/patternfly-additions.min.css" rel="stylesheet" />
+  <link href="../../latest/_stylesheets/patternfly.min.css" rel="stylesheet" />
+
     <!-- Patternfly JS -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -122,7 +123,7 @@
 <div id="toctitle" class="title"></div>
 <ul class="sectlevel1">
 <li><a href="#quick-start">Quick Start</a>
-<ul class="sectlevel3">
+<ul class="sectlevel2">
 <li><a href="#export-the-variables">Export the Variables</a></li>
 <li><a href="#setup-the-subscriptions">Setup the Subscriptions</a></li>
 <li><a href="#copy-and-paste-deploy">Copy and Paste deploy</a></li>
@@ -163,8 +164,8 @@
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="export-the-variables"><a class="anchor" href="#export-the-variables"></a>Export the Variables</h4>
+<div class="sect2">
+<h3 id="export-the-variables"><a class="anchor" href="#export-the-variables"></a>Export the Variables</h3>
 <div class="paragraph">
 <p>First we start by setting a couple environment variables. These will serve the rest of the copy and paste operation.</p>
 </div>
@@ -232,8 +233,8 @@ export IPADDR=$(ip -f inet address show $IFACE |grep inet|awk '{print $2}' |cut 
 </table>
 </div>
 </div>
-<div class="sect3">
-<h4 id="setup-the-subscriptions"><a class="anchor" href="#setup-the-subscriptions"></a>Setup the Subscriptions</h4>
+<div class="sect2">
+<h3 id="setup-the-subscriptions"><a class="anchor" href="#setup-the-subscriptions"></a>Setup the Subscriptions</h3>
 <div class="paragraph">
 <p>Next we are going to setup your subscriptions with subscription-manager.</p>
 </div>
@@ -258,8 +259,8 @@ subscription-manager list --available --matches 'Red Hat Satellite'</pre>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="copy-and-paste-deploy"><a class="anchor" href="#copy-and-paste-deploy"></a>Copy and Paste deploy</h4>
+<div class="sect2">
+<h3 id="copy-and-paste-deploy"><a class="anchor" href="#copy-and-paste-deploy"></a>Copy and Paste deploy</h3>
 <div class="paragraph">
 <p>Now you can copy and paste from below, and you will have a complete satellite install upon completion.</p>
 </div>
